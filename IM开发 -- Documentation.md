@@ -72,3 +72,31 @@
    + These Java APIs enables Java programs to execute SQL statements and interact with any SQL compliant database.
 2. Hibernate is an **O**bject-**R**elational **M**apping (ORM) solution for JAVA.
 
+
+
+### Step 4：Jersey Configuration
+
+1. An Open-Source RESTful Web Services framework,
+2. **<font color=red>Attention:</font>**
+   + if appears 404 when accessing the interfaces, check if 
+     + deployment OR dependencies (gradle)
+
+
+
+---
+
+## Android 前端配置
+
+1. **Gradle**
+
+   + [Gradle](https://gradle.org/) is a **Groovy-based** build management system designed specifically for building Java-based projects.
+   + Groovy is a python like lang that runs on the JVM
+
+   + **In Gradle, Builds consist of one or more projects and each project consists of one or more tasks.**
+2. **Build LifeCycle**
+1. **In the <font color=red>initialization phase</font>, Gradle determines which projects are going to take part in a multi-project build.** --> settings.gradle
+   2. **In the <font color=red>configuration phase</font>, all created projects instances are configured based on Gradle feature configuration on demand.**
+   3. **In the <font color=red>execution phase</font>, a subset of tasks, created and configured are executed.** 
+3. Build.gradle(Project:name)
+   1. we wrote a ext block, for reusing some vars in other module's build.gradle
+4. 对于新下载的项目，可以通过替换gradle来加快build project的过程

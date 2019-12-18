@@ -10,7 +10,11 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    maven{
+        url 'http://mvn.gt.igexin.com/nexus/content/repositories/releases'
+    }
 }
+
 
 dependencies {
     // Gson json
@@ -19,8 +23,8 @@ dependencies {
     compile 'com.google.guava:guava:21.0'
 
     // 推送依赖
-    compile 'com.gexin.platform:gexin-rp-sdk-http:4.1.0.0'
-
+//    compile 'com.gexin.platform:gexin-rp-sdk-http:4.1.0.0'
+    compile 'com.getui:gssdk:2.3.0.0'
 
     // Jersey 轻量级Restful接口框架
     compile 'org.glassfish.jersey.core:jersey-client:2.28'
@@ -32,6 +36,7 @@ dependencies {
     compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.28'
     // multipart扩展，用以文件上传组建
     compile 'org.glassfish.jersey.media:jersey-media-multipart:2.28'
+
 
 
     // 数据库操作框架

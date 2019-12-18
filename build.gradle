@@ -25,3 +25,15 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    //version info
+    versionCode = 1;
+    versionName = '1.0.0'
+
+    //version info
+    appcompVersion = '1.1.0'
+    supportVersion = '29'
+    butterknifeVersion = '10.2.0'
+
+}
