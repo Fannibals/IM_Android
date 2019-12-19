@@ -9,10 +9,9 @@ import androidx.fragment.app.Fragment;
 
 import java.util.List;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public abstract class Activity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,7 +20,7 @@ public abstract class Activity extends AppCompatActivity {
         initWindows();
 
         if (initArgs(getIntent().getExtras())){
-            getContentLayoutId();
+            setContentView(getContentLayoutId());
             initWidget();
             initData();
         }else{
@@ -67,8 +66,8 @@ public abstract class Activity extends AppCompatActivity {
         List<Fragment> fragments = getSupportFragmentManager().getFragments();
         if (fragments != null && fragments.size() > 0) {
             for (Fragment fragment: fragments){
-                if (fragment instanceof com.ethan.common.app.Fragment){
-                    if (((com.ethan.common.app.Fragment) fragment).onBackPressed()){
+                if (fragment instanceof BaseFragment){
+                    if (((BaseFragment) fragment).onBackPressed()){
                         return;
                     }
                 }

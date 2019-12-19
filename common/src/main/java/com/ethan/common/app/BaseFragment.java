@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-public abstract class Fragment extends androidx.fragment.app.Fragment {
+public abstract class BaseFragment extends androidx.fragment.app.Fragment {
 
     protected Unbinder mRootUnbinder;
     protected View mRoot;

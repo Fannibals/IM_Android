@@ -1,18 +1,26 @@
 package com.ethan.imapp;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.widget.TextView;
 
-import android.os.Bundle;
+import com.ethan.common.app.BaseActivity;
 
-import com.ethan.common.Common;
+import butterknife.BindView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
+
+    @BindView(R.id.txt_text)
+    TextView mTextView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected int getContentLayoutId() {
+        return R.layout.activity_main;
+    }
 
-        new Common();
+    @Override
+    protected void initWidget() {
+        super.initWidget();
+        mTextView.setText("Hello Kitty");
     }
 }
+
+
