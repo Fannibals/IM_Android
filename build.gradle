@@ -35,5 +35,6 @@ ext {
     appcompVersion = '1.1.0'
     supportVersion = '29'
     butterknifeVersion = '10.2.0'
+    recyclerViewVersion = '1.1.0'
 
 }
