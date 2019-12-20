@@ -33,8 +33,11 @@ ext {
 
     //version info
     appcompVersion = '1.1.0'
-    supportVersion = '29'
     butterknifeVersion = '10.2.0'
     recyclerViewVersion = '1.1.0'
+    geniusVersion = '2.1.1'
+    glideVersion = '3.7.0'
+    circleimageviewVersion = '3.0.1'
+    materialDesignVersion = '1.0.0'
 
 }
