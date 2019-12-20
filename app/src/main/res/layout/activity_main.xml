@@ -61,7 +61,7 @@
     <FrameLayout
         android:id="@+id/lay_container"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintTop_toBottomOf="@id/appBar"
         app:layout_constraintBottom_toTopOf="@id/navigation"
@@ -84,11 +84,18 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
-        android:background="@color/grey_500"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="@dimen/len_52"
         android:layout_gravity = "bottom"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/navigation_items"
+        app:itemIconTint="@color/text_nav"
+        app:itemTextColor="@color/text_nav"
+        android:elevation="@dimen/len_4"
+        android:outlineProvider="bounds"
+        android:translationZ="@dimen/len_8"
+        tools:targetApi="LOLLIPOP"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,8 +41,7 @@ public abstract class BaseFragment extends androidx.fragment.app.Fragment {
             }
         }
 
-
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return mRoot;
 
     }
 

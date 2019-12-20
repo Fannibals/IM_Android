@@ -18,7 +18,7 @@ android {
         }
     }
 
-    compileOptions{
+    compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
@@ -29,6 +29,7 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$rootProject.ext.appcompVersion"
     // ButterKnife
     implementation "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion"
     // RecyclerView
     implementation "androidx.recyclerview:recyclerview:$rootProject.ext.recyclerViewVersion"
