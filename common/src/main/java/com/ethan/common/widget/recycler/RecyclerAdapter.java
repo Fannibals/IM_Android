@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -85,12 +86,12 @@ public abstract class RecyclerAdapter<Data> extends RecyclerView.Adapter<Recycle
         // create a viewHolder
         ViewHolder<Data> holder = onCreateViewHolder(root,viewType);
 
+        // set the holder as the tag of the view
+        root.setTag(R.id.tag_recycler_holder,holder);
+
         // set the click events
         root.setOnClickListener(this);
         root.setOnLongClickListener(this);
-
-        // set the holder as the tag of the view
-        root.setTag(R.id.tag_recycler_holder,holder);
 
         // BindView
         holder.unbinder = ButterKnife.bind(holder,root);
@@ -204,6 +205,38 @@ public abstract class RecyclerAdapter<Data> extends RecyclerView.Adapter<Recycle
 
     }
 
+    @Override
+    public void update(Data data, ViewHolder<Data> holder) {
+        int pos = holder.getAdapterPosition();
+
+        if (pos >= 0) {
+            // remove and update the data
+            mDataList.remove(pos);
+            mDataList.add(pos,data);
+            // notify the change
+            notifyItemChanged(pos);
+        }
+    }
+
+    private static class Image{
+        int id; // 数据的ID
+        String path; // path of the pic
+        long data;
+        boolean isSelect;
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Image image = (Image) o;
+            return Objects.equals(path, image.path);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(path);
+        }
+    }
 
     @Override
     public void onClick(View v) {
@@ -239,8 +272,26 @@ public abstract class RecyclerAdapter<Data> extends RecyclerView.Adapter<Recycle
      */
     public interface AdapterListener<Data> {
         // listen when the cell is clicked
-        void onItemClick(RecyclerView.ViewHolder holder, Data data);
+        void onItemClick(RecyclerAdapter.ViewHolder holder, Data data);
         // listen when the cell is long clicked
-        void onItemLongClick(RecyclerView.ViewHolder holder, Data data);
+        void onItemLongClick(RecyclerAdapter.ViewHolder holder, Data data);
+    }
+
+    /**
+     * Implement the listener
+     * @param <Data>
+     */
+    public static class AdapterListenerImpl<Data> implements AdapterListener<Data>{
+
+
+        @Override
+        public void onItemClick(ViewHolder holder, Data data) {
+
+        }
+
+        @Override
+        public void onItemLongClick(ViewHolder holder, Data data) {
+
+        }
     }
 }

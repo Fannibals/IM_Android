@@ -5,13 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".fragments.main.ActiveFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.ethan.common.widget.GalleryView
+        android:id="@+id/gallery"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="@dimen/len_52"
-        android:textColor="@color/colorAccent"
-        android:text="Active" />
+        android:padding="1dp"/>
 
 </FrameLayout>
