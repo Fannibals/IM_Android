@@ -25,6 +25,7 @@ import com.bumptech.glide.request.target.ViewTarget;
 import com.ethan.common.app.BaseActivity;
 import com.ethan.common.app.BaseFragment;
 import com.ethan.common.widget.PortraitView;
+import com.ethan.imapp.activities.AccountActivity;
 import com.ethan.imapp.fragments.main.ActiveFragment;
 import com.ethan.imapp.fragments.main.ContactFragment;
 import com.ethan.imapp.fragments.main.GroupFragment;
@@ -113,7 +114,7 @@ public class MainActivity extends BaseActivity implements
 
     @OnClick({R.id.btn_action})
     void onActionClick(){
-
+        AccountActivity.show(this);
     }
 
     /**
