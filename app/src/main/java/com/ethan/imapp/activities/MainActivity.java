@@ -1,6 +1,7 @@
-package com.ethan.imapp;
+package com.ethan.imapp.activities;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.util.Log;
@@ -25,7 +26,9 @@ import com.bumptech.glide.request.target.ViewTarget;
 import com.ethan.common.app.BaseActivity;
 import com.ethan.common.app.BaseFragment;
 import com.ethan.common.widget.PortraitView;
+import com.ethan.imapp.R;
 import com.ethan.imapp.activities.AccountActivity;
+import com.ethan.imapp.fragments.assist.PermissionFragment;
 import com.ethan.imapp.fragments.main.ActiveFragment;
 import com.ethan.imapp.fragments.main.ContactFragment;
 import com.ethan.imapp.fragments.main.GroupFragment;
@@ -66,6 +69,11 @@ public class MainActivity extends BaseActivity implements
      * Handling fragment
      */
     private NavHelper<Integer> mNavHelper;
+
+    // Entrance for the Main Activity
+    public static void show (Context context){
+        context.startActivity(new Intent(context, MainActivity.class));
+    }
 
     @Override
     protected int getContentLayoutId() {

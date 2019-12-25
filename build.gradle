@@ -41,5 +41,7 @@ ext {
     circleimageviewVersion = '3.0.1'
     materialDesignVersion = '1.0.0'
     ucropVersion = '2.2.4'
+    easyPMVersion = "3.0.0"
+    ossVersion = '2.3.0'
 
 }

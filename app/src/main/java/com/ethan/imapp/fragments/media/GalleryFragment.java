@@ -92,9 +92,9 @@ public class GalleryFragment extends BottomSheetDialogFragment
 
 
     /**
-     * 自定义： 为了使顶部状态栏不变色（不变成黑色）
+     * 自定义SheetDialog： 为了使顶部状态栏不变色（不变成黑色）
      */
-    private static class TransStatusBottomSheetDialog extends BottomSheetDialog {
+    public static class TransStatusBottomSheetDialog extends BottomSheetDialog {
 
         public TransStatusBottomSheetDialog(@NonNull Context context) {
             super(context);

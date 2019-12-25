@@ -15,7 +15,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import static net.qiujuer.italker.utils.StreamUtil.close;
+import static com.ethan.common.utils.StreamUtil.close;
 
 
 /**

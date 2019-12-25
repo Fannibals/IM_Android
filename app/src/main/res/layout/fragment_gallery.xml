@@ -27,7 +27,7 @@
             android:padding="1dp"
             android:clipToPadding="false"
             android:minHeight="@dimen/len_92"
-            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             />
     </com.google.android.material.appbar.AppBarLayout>
 
