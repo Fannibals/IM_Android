@@ -1,11 +1,12 @@
 package net.qiujuer.web.italker.push.service;
 
-import net.qiujuer.web.italker.push.bean.User;
+import net.qiujuer.web.italker.push.bean.api.account.RegisterModel;
+import net.qiujuer.web.italker.push.bean.card.UserCard;
+import net.qiujuer.web.italker.push.bean.db.User;
+import net.qiujuer.web.italker.push.factory.UserFactory;
 
-import javax.print.attribute.standard.Media;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.security.MessageDigest;
 
 /**
  * @author Ethan
@@ -13,20 +14,26 @@ import java.security.MessageDigest;
 @Path("/account")
 public class AccountService {
 
-    @GET
-    @Path("/login")
-    public String get(){
-        return "You Get The Login";
-    }
-
     @POST
-    @Path("/login")
-    @Consumes({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})
+    @Path("/register")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public User post(){
-        User user = new User();
-        user.setGender(1);
-        user.setName("Kitty");
-        return user;
+    public UserCard register(RegisterModel model){
+
+        User user = UserFactory.register(model.getAccount(),
+                model.getPassword(),model.getName());
+
+        if (user != null) {
+            UserCard card = new UserCard();
+            card.setName(user.getName());
+            card.setPhone(user.getPhone());
+            card.setFollow(true);
+            card.setSex(user.getSex());
+            card.setModifyAt(user.getUpdateAt());
+            return card;
+        }
+
+        return null;
+
     }
 }

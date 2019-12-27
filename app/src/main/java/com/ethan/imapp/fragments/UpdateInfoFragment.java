@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.os.RecoverySystem;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +21,8 @@ import com.bumptech.glide.Glide;
 import com.ethan.common.app.BaseFragment;
 import com.ethan.common.app.MyApplication;
 import com.ethan.common.widget.PortraitView;
+import com.ethan.factory.Factory;
+import com.ethan.factory.net.UploadHelper;
 import com.ethan.imapp.R;
 import com.ethan.imapp.fragments.media.GalleryFragment;
 import com.yalantis.ucrop.UCrop;
@@ -87,11 +90,26 @@ public class UpdateInfoFragment extends BaseFragment {
         }
     }
 
+    /**
+     * load uri to portrait
+     * @param uri
+     */
     private void loadPortrait(Uri uri) {
         Glide.with(getContext())
                 .load(uri)
                 .asBitmap()
                 .centerCrop()
                 .into(mPortrait);
+
+        final String localPath = uri.getPath();
+
+        Factory.runOnAsync(new Runnable() {
+            @Override
+            public void run() {
+                String url = UploadHelper.uploadPortrait(localPath);
+                Log.e("TAG","url: "+ url);
+            }
+        });
     }
+
 }
