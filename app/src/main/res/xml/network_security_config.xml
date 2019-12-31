@@ -3,5 +3,6 @@
     <domain-config cleartextTrafficPermitted="true">
         <domain includeSubdomains="true">im-ethan-app.oss-ap-southeast-2.aliyuncs.com</domain>
         <domain includeSubdomains="true">203.107.1.1</domain>
+        <domain includeSubdomains="true">10.5.142.155</domain>
     </domain-config>
 </network-security-config>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.UpdateInfoFragment">
+    tools:context=".fragments.user.UpdateInfoFragment">
 
     <com.ethan.common.widget.PortraitView
         android:id="@+id/im_portrait"

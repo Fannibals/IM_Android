@@ -7,26 +7,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="974770fc-88f8-4d7d-94ac-343ec1c120cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/activities/UserActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/fragments/account/AccountTrigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/fragments/account/LoginFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/fragments/account/RegisterFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/res/drawable-xxxhdpi/bg_src_tianjin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/res/layout/activity_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/res/layout/content_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_register.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/ethan/common/app/PresenterFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/ethan/factory/data/DataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/ethan/factory/presenter/BaseContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/java/com/ethan/factory/presenter/BasePresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/res/drawable/bg_account_input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/res/drawable/bg_gradient_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/res/drawable/ic_cursor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/res/drawable/ic_direction_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/res/drawable/ic_key.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/res/drawable/ic_person.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/res/drawable/ic_phone.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/src/main/res/drawable/sel_btn_bg_black_alpha_44.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/data/helper/AccountHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/model/api/AccountRspModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/model/api/RegisterModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/model/api/RspModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/model/db/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/net/Network.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/net/RemoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/presenter/account/LoginContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/presenter/account/RegisterContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/presenter/account/RegisterPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lang/src/main/res/values/strings-data.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/bean/api/account/RegisterModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/bean/api/account/RegisterModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/bean/db/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/bean/db/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/factory/UserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/factory/UserFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/utils/Hib.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/iTalker-1.0-SNAPSHOT.war/WEB-INF/classes/net/qiujuer/web/italker/push/utils/Hib.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/iTalker-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/iTalker-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/bean/api/account/RegisterModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/bean/api/account/RegisterModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/bean/db/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/bean/db/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/factory/UserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/factory/UserFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/utils/Hib.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/net/qiujuer/web/italker/push/utils/Hib.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/api/account/RegisterModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/api/account/RegisterModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/factory/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/factory/UserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/utils/Hib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/utils/Hib.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/activities/AccountActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/activities/AccountActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/activities/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/fragments/UpdateInfoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/fragments/user/UpdateInfoFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_update_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_update_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/ethan/common/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/ethan/common/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/ethan/common/app/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/ethan/common/app/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../factory/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../factory/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/src/main/res/values/strings-label.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lang/src/main/res/values/strings-label.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -101,7 +127,7 @@
           <entry key="class" value="1" />
           <entry key="gradle" value="8" />
           <entry key="gradlew" value="6" />
-          <entry key="java" value="132" />
+          <entry key="java" value="140" />
           <entry key="jsp" value="4" />
           <entry key="properties" value="1" />
           <entry key="sql" value="13" />
@@ -112,7 +138,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="8" />
-          <entry key="JAVA" value="132" />
+          <entry key="JAVA" value="140" />
           <entry key="JSP" value="4" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="Properties" value="1" />
@@ -123,7 +149,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="22" />
-          <entry key="java" value="6004" />
+          <entry key="java" value="6020" />
           <entry key="jsp" value="12" />
           <entry key="sql" value="24" />
           <entry key="txt" value="55" />
@@ -133,7 +159,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="22" />
-          <entry key="JAVA" value="6004" />
+          <entry key="JAVA" value="6020" />
           <entry key="JSP" value="12" />
           <entry key="PLAIN_TEXT" value="55" />
           <entry key="Scratch" value="24" />
@@ -147,8 +173,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+            <state relative-caret-position="280">
+              <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,14 +182,62 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/api/base/ResponseModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="e#2829#2830#0" expanded="true" />
+                <element signature="e#2880#2881#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+            <state relative-caret-position="630">
+              <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/card/UserCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#794#795#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/api/account/AccountRspModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/provider/LocalDateTimeConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="22" column="82" lean-forward="true" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="109" />
             </state>
           </provider>
         </entry>
@@ -629,6 +703,28 @@
               <item name="push" type="462c0819:PsiDirectoryNode" />
               <item name="bean" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iTalker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="push" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iTalker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="push" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -713,7 +809,7 @@
     <property name="SearchEverywhereHistoryKey" value="Hib&#9;FILE&#9;file:///Users/Ethan/Desktop/IM_Android/Web/src/main/java/net/qiujuer/web/italker/push/utils/Hib.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577678543526" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577772017418" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -910,12 +1006,12 @@
       <workItem from="1577427040062" duration="2187000" />
       <workItem from="1577506041148" duration="5456000" />
       <workItem from="1577594350233" duration="6597000" />
-      <workItem from="1577677769412" duration="666000" />
+      <workItem from="1577677769412" duration="2731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35871000" />
+    <option name="totallyTimeSpent" value="37936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -928,9 +1024,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23390558" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23390558" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -942,7 +1037,7 @@
       <window_info id="Persistence" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.4759036" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.7373494" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.76506025" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1027,20 +1122,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.persistence/javax.persistence-api/2.2/462dff65f6f8bde02ee9d8afe07fe9d50268199c/javax.persistence-api-2.2-sources.jar!/javax/persistence/OneToMany.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="112" column="18" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.persistence/javax.persistence-api/2.2/462dff65f6f8bde02ee9d8afe07fe9d50268199c/javax.persistence-api-2.2-sources.jar!/javax/persistence/GeneratedValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/Group.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
@@ -1182,13 +1263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/provider/LocalDateTimeConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/GroupMember.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1208,28 +1282,6 @@
             <element signature="e#885#886#0" expanded="true" />
             <element signature="e#929#930#0" expanded="true" />
             <element signature="e#965#966#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/api/account/AccountRspModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/card/UserCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-370">
-          <caret line="12" selection-start-line="12" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1312,13 +1364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/api/base/ResponseModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="124" column="39" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/2.1.5/76d35c591d1b127b0523338cd7c490b7d2862305/jakarta.ws.rs-api-2.1.5-sources.jar!/javax/ws/rs/Path.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -1378,16 +1423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/2.1.5/76d35c591d1b127b0523338cd7c490b7d2862305/jakarta.ws.rs-api-2.1.5-sources.jar!/javax/ws/rs/core/SecurityContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1414,10 +1449,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/StrictMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="631" column="34" selection-start-line="631" selection-start-column="34" selection-end-line="631" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="645" lean-forward="true" selection-start-line="645" selection-end-line="645" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        <state relative-caret-position="630">
+          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/provider/LocalDateTimeConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="82" lean-forward="true" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/card/UserCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/api/base/ResponseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#2829#2830#0" expanded="true" />
+            <element signature="e#2880#2881#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/api/account/AccountRspModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
