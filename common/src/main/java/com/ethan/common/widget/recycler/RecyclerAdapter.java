@@ -62,7 +62,7 @@ public abstract class RecyclerAdapter<Data> extends RecyclerView.Adapter<Recycle
     }
 
     /**
-     *
+     * get the type of the layout
      * @param position
      * @param data
      * @return a xml id, used for creating a viewholder
@@ -73,7 +73,7 @@ public abstract class RecyclerAdapter<Data> extends RecyclerView.Adapter<Recycle
     /**
      * Create a ViewHolder
      * @param parent RecyclerView
-     * @param viewType 界面的类型 --> viewType here
+     * @param viewType 界面的类型 --> viewType here == layout id
      * @return ViewHolder
      */
     @NonNull
@@ -207,8 +207,10 @@ public abstract class RecyclerAdapter<Data> extends RecyclerView.Adapter<Recycle
 
     @Override
     public void update(Data data, ViewHolder<Data> holder) {
+        // 得到当前viewholder的坐标
         int pos = holder.getAdapterPosition();
 
+        // 如果找到该holder的position
         if (pos >= 0) {
             // remove and update the data
             mDataList.remove(pos);
@@ -220,9 +222,9 @@ public abstract class RecyclerAdapter<Data> extends RecyclerView.Adapter<Recycle
 
     private static class Image{
         int id; // 数据的ID
-        String path; // path of the pic
-        long data;
-        boolean isSelect;
+        String path; // 图片的路径
+        long data;  // 图片的创建日期
+        boolean isSelect;   // 是否选中
 
         @Override
         public boolean equals(Object o) {
@@ -279,10 +281,12 @@ public abstract class RecyclerAdapter<Data> extends RecyclerView.Adapter<Recycle
 
     /**
      * Implement the listener
+     * 对回调接口做一次实现AdapterListener
+     *
+     *
      * @param <Data>
      */
-    public static class AdapterListenerImpl<Data> implements AdapterListener<Data>{
-
+    public static abstract class AdapterListenerImpl<Data> implements AdapterListener<Data>{
 
         @Override
         public void onItemClick(ViewHolder holder, Data data) {

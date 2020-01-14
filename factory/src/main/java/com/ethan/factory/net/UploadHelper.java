@@ -32,6 +32,9 @@ public class UploadHelper {
     private static final String TAG = UploadHelper.class.getSimpleName();
     private static final String END_POINT= "oss-ap-southeast-2.aliyuncs.com";
     private static final String BUCKET_NAME = "im-ethan-app";
+    private static final String ACS_KEY_ID = "LTAI4FcJvJqKBATQSHtdBWLQ";
+    private static final String ACS_KEY_SCT = "Q6ocdnZ211qGhyrSJq2c5jMEMugoor";
+
 
     private static OSS getClient(){
         //if null , default will be init
@@ -49,8 +52,7 @@ public class UploadHelper {
 ////                "<StsToken.SecurityToken>");
         // deprecated method
         OSSCredentialProvider credentialProvider = new
-                OSSPlainTextAKSKCredentialProvider("LTAI4FcJvJqKBATQSHtdBWLQ",
-                "Q6ocdnZ211qGhyrSJq2c5jMEMugoor");
+                OSSPlainTextAKSKCredentialProvider(ACS_KEY_ID, ACS_KEY_SCT);
 
         OSS oss = new OSSClient(Factory.app(), END_POINT, credentialProvider, conf);
         return oss;

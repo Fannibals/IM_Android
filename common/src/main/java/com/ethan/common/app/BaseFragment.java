@@ -35,8 +35,12 @@ public abstract class BaseFragment extends androidx.fragment.app.Fragment {
             initWidget(root);
             mRoot = root;
         }else{
+            /**
+             * 主要的作用是为了后面的生命周期中维持这个变量，避免在异常回收情况下出现重复的生命流程调用，
+             * 避免Presenter部分的初始化重复调用。当然这是一个临时的处理办法，因为还有更优秀的处理方案。
+             */
             if (mRoot.getParent() != null) {
-                // Remove the current root remove from it parent
+                // Remove the current root from its parent
                 ((ViewGroup)mRoot.getParent()).removeView(mRoot);
             }
         }
@@ -90,6 +94,5 @@ public abstract class BaseFragment extends androidx.fragment.app.Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-//        mRootUnbinder.unbind();
     }
 }

@@ -18,6 +18,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // 在界面未初始化之前调用的初始化窗口
         initWindows();
 
         if (initArgs(getIntent().getExtras())){
@@ -62,6 +63,10 @@ public abstract class BaseActivity extends AppCompatActivity {
         return super.onSupportNavigateUp();
     }
 
+    /**
+     * checking whether the customized fragment has intercept the back method
+     * @see BaseFragment#onBackPressed()
+     */
     @Override
     public void onBackPressed() {
 

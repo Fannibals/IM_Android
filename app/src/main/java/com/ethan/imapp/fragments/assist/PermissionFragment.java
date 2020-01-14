@@ -184,9 +184,9 @@ public class PermissionFragment extends BottomSheetDialogFragment
     public static boolean haveAll(Context context, FragmentManager manager) {
         boolean haveAll = haveNetworkPerm(context)
                 && haveReadPerm(context)
-                && haveWritePerm(context)
-                && haveRecordAudioPerm(context)
-                && haveMountStoragePerm(context);
+                && haveWritePerm(context);
+//                && haveRecordAudioPerm(context)
+//                && haveMountStoragePerm(context);
 
         if (!haveAll) show(manager);
 

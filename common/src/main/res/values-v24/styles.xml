@@ -3,7 +3,7 @@
 
     <style name="AppTheme.Base" parent="Theme.private">
 
-<!--        delete the default elevation-->
+<!--        delete the default elevation（阴影）-->
         <item name="android:elevation">0dp</item>
         <item name="android:outlineProvider">none</item>
 

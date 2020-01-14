@@ -92,6 +92,10 @@ public class MainActivity extends BaseActivity implements
                 .add(R.id.action_contact, new NavHelper.Tab<>(ContactFragment.class, R.string.title_contact));
 
         mNavigation.setOnNavigationItemSelectedListener(this);
+
+        // ViewTarget is used here for handling the scenario
+        // that setting image into customized view
+        // if for normal imageview, just use that ref
         Glide.with(this)
                 .load(R.drawable.bg_src_morning)
                 .centerCrop()
@@ -103,8 +107,12 @@ public class MainActivity extends BaseActivity implements
                 })
         ;
 
+        PermissionFragment.haveAll(this,getSupportFragmentManager());
     }
 
+    /**
+     * 里面进行了menu的default selection
+     */
     @Override
     protected void initData() {
         super.initData();
@@ -163,6 +171,7 @@ public class MainActivity extends BaseActivity implements
             //
             if (newTab.extra.equals(R.string.title_group)){
                 mAction.setImageResource(R.drawable.ic_group_add);
+                // rotation 如果一样的话，看起来没变
                 rotation = -360;
             }else{
                 mAction.setImageResource(R.drawable.ic_contact_add);
@@ -178,6 +187,7 @@ public class MainActivity extends BaseActivity implements
                 .setDuration(480)
                 .start();
     }
+
 }
 
 

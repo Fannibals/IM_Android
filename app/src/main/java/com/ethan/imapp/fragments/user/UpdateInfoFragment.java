@@ -58,15 +58,16 @@ public class UpdateInfoFragment extends BaseFragment {
             @Override
             public void onSelectedImage(String path) {
                 UCrop.Options options = new UCrop.Options();
-                //设置图片处理的格式
+                // 设置图片处理的格式：JPEG
                 options.setCompressionFormat(Bitmap.CompressFormat.JPEG);
-                //
+                // 设置压缩后的图片精度
                 options.setCompressionQuality(96);
 
+                // 得到头像的缓存地址
                 File dPath = MyApplication.getPortraitTmpFile();
                 UCrop.of(Uri.fromFile(new File(path)), Uri.fromFile(dPath))
-                        .withAspectRatio(1,1)
-                        .withMaxResultSize(520,520)
+                        .withAspectRatio(1,1)       // 1：1的比例
+                        .withMaxResultSize(520,520)     //返回的最大的参数
                         .withOptions(options)
                         .start((AppCompatActivity) getActivity());
 

@@ -38,6 +38,11 @@ public class NavHelper<T> {
         this.listener = listener;
     }
 
+    /**
+     * 执行点击菜单的操作
+     * @param menuId
+     * @return 是否能够处理这个点击
+     */
     public boolean performClickMenu(int menuId){
         // 集合中寻找点击的菜单对应的Tab
         // 如果有则进行处理
@@ -57,6 +62,7 @@ public class NavHelper<T> {
         Tab<T> oldTab = null;
         if (currentTab != null) {
             oldTab = currentTab;
+            // 如果当前的Tab就是点击的tab，那么我们不做处理
             if (oldTab == tab) {
                 notifyReselect(tab);
                 return;
@@ -71,6 +77,7 @@ public class NavHelper<T> {
         if (oldTab != null) {
             if (oldTab.fragment != null) {
                 // 从界面移除，但仍然在Fragment Cache中
+                // 用remove的话，就是完全移除
                 ft.detach(oldTab.fragment);
             }
         }
@@ -78,6 +85,9 @@ public class NavHelper<T> {
         if(newTab != null) {
             if (newTab.fragment == null) {
 //                Fragment fragment = Fragment.instantiate(context,newTab.clx.getName());
+
+                // --------------- IMPORTANT --------------------
+                // Using the  clx.getName() to instantiate a new Fragment
                 Fragment fragment = new FragmentFactory().instantiate(context.getClassLoader(),newTab.clx.getName());
                 // put in cache
                 newTab.fragment = fragment;

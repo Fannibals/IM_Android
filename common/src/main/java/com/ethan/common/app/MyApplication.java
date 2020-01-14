@@ -47,6 +47,7 @@ public class MyApplication extends Application {
         // 创建所有的对应的文件夹
         dir.mkdirs();
 
+        // 删除旧的一些缓存行为文件
         File[] files = dir.listFiles();
         if (files != null && files.length > 0) {
             for(File file:files) {

@@ -69,6 +69,9 @@ public class GalleryView extends RecyclerView {
         init();
     }
 
+    /**
+     * 1. setLayoutManager --> spancount = 4
+     */
     private void init() {
         setLayoutManager(new GridLayoutManager(getContext(), 4));
         setAdapter(mAdapter);
@@ -130,6 +133,10 @@ public class GalleryView extends RecyclerView {
     }
 
 
+    /**
+     * 得到选中的图片的全部地址
+     * @return 一个数组
+     */
     public String[] getSelectedPath(){
         String[] paths = new String[mSelectedImages.size()];
         int index = 0;
@@ -181,6 +188,7 @@ public class GalleryView extends RecyclerView {
 
         @NonNull
         @Override
+        // 首先检查指定的id是否存在，如果不存在才会触发该方法，通过该方法才能创建一个loader。
         public Loader<Cursor> onCreateLoader(int id, @Nullable Bundle args) {
             // create a Loader
             if (id == LOADER_ID) {
@@ -195,6 +203,7 @@ public class GalleryView extends RecyclerView {
         }
 
         @Override
+        // 完成对Ui控件的更新，如果不再使用，将自动释放loader的数据，不需要使用close();
         public void onLoadFinished(@NonNull Loader<Cursor> loader, Cursor data) {
             List<Image> images = new ArrayList<>();
             if (data != null) {

@@ -29,7 +29,6 @@ public class ActiveFragment extends BaseFragment {
         // Required empty public constructor
     }
 
-
     @Override
     protected int getContentLayoutId() {
         return R.layout.fragment_active;

@@ -15,7 +15,7 @@ public class UiTools {
     private static int STATUS_BAR_HEIGHT = -1;
 
     /**
-     * get the status bar height
+     * get the height of status bar
      * @param activity
      * @return height of status bar
      */
@@ -23,9 +23,11 @@ public class UiTools {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && STATUS_BAR_HEIGHT == -1) {
             try {
                 final Resources res = activity.getResources();
+
                 // 尝试获取status_bar_height这个属性的Id对应的res int value；
                 int resourceId = res
                         .getIdentifier("status_bar_height", "dimen", "android");
+
                 if (resourceId <= 0) {
                     Class<?> clazz = Class.forName("com.android.internal.R$dimen");
                     Object object = clazz.newInstance();
@@ -33,11 +35,14 @@ public class UiTools {
                             .get(object).toString());
                 }
 
+                // 如果拿到了就直接调用，获取
                 if (resourceId > 0) {
                     STATUS_BAR_HEIGHT = res.getDimensionPixelSize(resourceId);
                 } else {
+                    // 通过window拿到
                     Rect rect = new Rect();
                     Window window = activity.getWindow();
+                    // 拿到根布局的可见区域
                     window.getDecorView().getWindowVisibleDisplayFrame(rect);
                     STATUS_BAR_HEIGHT = rect.top;
                 }

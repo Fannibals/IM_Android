@@ -24,10 +24,9 @@ public class LaunchActivity extends BaseActivity {
     protected void onResume() {
         super.onResume();
 
-//        if ( PermissionFragment.haveAll(this,getSupportFragmentManager())){
-//            MainActivity.show(this);
-//            finish();
-//        }
-        MainActivity.show(this);
+        if ( PermissionFragment.haveAll(this,getSupportFragmentManager())) {
+            MainActivity.show(this);
+            finish();
+        }
     }
 }

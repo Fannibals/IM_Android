@@ -1,5 +1,6 @@
 package com.ethan.imapp.activities;
 
+import android.content.Context;
 import android.content.Intent;
 
 import com.ethan.common.app.BaseActivity;
@@ -13,6 +14,14 @@ import com.ethan.imapp.R;
 public class UserActivity extends BaseActivity {
 
     Fragment mCurFragment;
+
+    /**
+     * New an account activity
+     * @param context
+     */
+    public static void show(Context context){
+        context.startActivity(new Intent(context,UserActivity.class));
+    }
 
     @Override
     protected int getContentLayoutId() {
