@@ -26,6 +26,7 @@ public class Message {
     @PrimaryKeyJoinColumn
     // 主键生成存储的类型为UUID
     // 这里不自动生成UUID，Id由代码写入，由客户端负责生成
+
     // 避免复杂的服务器和客户端的映射关系
     //@GeneratedValue(generator = "uuid")
     // 把uuid的生成器定义为uuid2，uuid2是常规的UUID toString

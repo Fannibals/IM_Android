@@ -17,6 +17,12 @@ import java.security.Principal;
 
 @Provider
 public class AuthRequestProvider implements ContainerRequestFilter {
+
+    /**
+     * 实现接口的过滤方法
+     * @param requestContext
+     * @throws IOException
+     */
     @Override
     public void filter(ContainerRequestContext requestContext) throws IOException {
         String relationPath = ((ContainerRequest) requestContext).getPath(false);
@@ -38,9 +44,12 @@ public class AuthRequestProvider implements ContainerRequestFilter {
 
         // Returns only when the User is not null
         // hence, simplifies the check process
+
+        // if can find a user
         if (!Strings.isNullOrEmpty(token)){
             final User self = UserFactory.findByToken(token);
             if (self != null) {
+                // 给当前请求添加上下文
                 requestContext.setSecurityContext(new SecurityContext() {
                     @Override
                     public Principal getUserPrincipal() {
@@ -55,6 +64,7 @@ public class AuthRequestProvider implements ContainerRequestFilter {
                         return true;
                     }
 
+                    // Https?
                     @Override
                     public boolean isSecure() {
                         return false;
@@ -69,6 +79,7 @@ public class AuthRequestProvider implements ContainerRequestFilter {
             }
         }
 
+        // if cannot find a user, then response an error
         // ResponseMdl
         ResponseModel model = ResponseModel.buildAccountError();
 
@@ -79,10 +90,6 @@ public class AuthRequestProvider implements ContainerRequestFilter {
         // interceptor
         // return to service after doing this process
         requestContext.abortWith(response);
-
-
-
-
 
     }
 }

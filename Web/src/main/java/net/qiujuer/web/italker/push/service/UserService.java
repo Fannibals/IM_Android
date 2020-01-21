@@ -22,6 +22,12 @@ import javax.ws.rs.core.SecurityContext;
 @Path("/user")
 public class UserService extends BaseService{
 
+    /**
+     * 用户信息修改接口
+     * @param token
+     * @param model UpdateInfoModel
+     * @return  用户个人信息
+     */
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)

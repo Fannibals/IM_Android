@@ -1,12 +1,14 @@
 package com.ethan.factory.net;
 
 import com.ethan.factory.model.api.AccountRspModel;
+import com.ethan.factory.model.api.LoginModel;
 import com.ethan.factory.model.api.RegisterModel;
 import com.ethan.factory.model.api.RspModel;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 
 /**
  * 网络请求的所有的接口
@@ -15,10 +17,28 @@ public interface RemoteService {
 
     /**
      * 网络请求一个注册接口
-     * @param model
+     * @param model 传入的是一个 RegisterModel
      * @return RspModel<AccountRspModel>
      */
     @POST("account/register")
     Call<RspModel<AccountRspModel>> accountRegister(@Body RegisterModel model);
+
+    /**
+     * 登录接口
+     *
+     * @param model LoginModel
+     * @return RspModel<AccountRspModel>
+     */
+    @POST("account/login")
+    Call<RspModel<AccountRspModel>> accountLogin(@Body LoginModel model);
+
+    /**
+     * 绑定设备Id
+     *
+     * @param pushId 设备Id
+     * @return RspModel<AccountRspModel>
+     */
+    @POST("account/bind/{pushId}")
+    Call<RspModel<AccountRspModel>> accountBind(@Path(encoded = true, value = "pushId") String pushId);
 
 }

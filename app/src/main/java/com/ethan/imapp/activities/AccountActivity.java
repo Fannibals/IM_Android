@@ -58,7 +58,10 @@ public class AccountActivity extends BaseActivity implements AccountTrigger {
                 .commit();
 
         // 初始化背景
-        // TODO: 未能理解里面的含义
+        // ViewTarget is used here due to it is a customized view
+        // * @param <T> -- (ex. ImageView)The specific subclass of view wrapped by this target.
+        // * @param <Z> -- (ex. GlideDrawable) The resource type this target will receive.
+
         Glide.with(this)
                 .load(R.drawable.bg_src_tianjin)
                 .centerCrop()
@@ -71,6 +74,7 @@ public class AccountActivity extends BaseActivity implements AccountTrigger {
                         // 使用适配类进行包装
                         drawable = DrawableCompat.wrap(drawable);
 
+                        // PorterDuff.Mode --》 图形混合处理
                         // 设置着色的效果和颜色，蒙板模式
                         drawable.setColorFilter(UiCompat.getColor(getResources(),R.color.colorAccent),
                                 PorterDuff.Mode.SCREEN);
@@ -86,6 +90,7 @@ public class AccountActivity extends BaseActivity implements AccountTrigger {
         Fragment fragment;
         if (mCurFragment == mLoginFragment) {
             if (mRegisterFragment == null) {
+                // 默认情况下为null，以后就不是null了
                 mRegisterFragment = new RegisterFragment();
             }
             fragment = mRegisterFragment;

@@ -61,12 +61,17 @@ public class AccountService {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public ResponseModel<AccountRspModel> login(LoginModel model){
+        // 新建一个user的model
         User user = UserFactory.login(model.getAccount(),model.getPassword());
 
+        // 检验参数
         if (!LoginModel.check(model)){
+            // 如果参数不匹配，则返回参数异常
             return ResponseModel.buildParameterError();
         }
+
         if (user != null) {
+            // 当model中pushId非空，则需要进行绑定
             if (!Strings.isNullOrEmpty(model.getPushId())){
                 return bind(user,model.getPushId());
             }
@@ -78,6 +83,7 @@ public class AccountService {
     }
 
     // 绑定设备Id
+    // PushId：唯一标识一台设备上的某一个应用
     @POST
     @Path("/bind/{pushId}")
     // 指定请求与返回的相应体为JSON
@@ -102,7 +108,6 @@ public class AccountService {
             //Token失效，所以无法绑定
             return ResponseModel.buildAccountError();
         }
-
     }
 
 
@@ -120,13 +125,10 @@ public class AccountService {
         if (user == null) {
             // 绑定失败则是服务器异常
             return ResponseModel.buildServiceError();
-
         }
 
         // 返回当前的账户, 并且已经绑定了
         AccountRspModel rspModel = new AccountRspModel(user, true);
         return ResponseModel.buildOk(rspModel);
-
     }
-
 }

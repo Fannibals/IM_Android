@@ -9,17 +9,11 @@ public interface LoginContract {
     interface View extends BaseContract.View<Presenter>{
         void loginSuccess();
 
-        void showError(@StringRes int str);
-
-        // public
-        void showLoading();
-
-        void setPresenter(RegisterContract.Presenter presenter);
     }
 
     interface Presenter extends BaseContract.Presenter {
         // start a login
-        void login(String phone, String name, String password);
+        void login(String phone, String password);
     }
 
 }

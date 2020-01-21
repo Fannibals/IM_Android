@@ -10,6 +10,20 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //个推相关参数
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "Ywh3jX3Mp69ljalCAOKeS5",
+                GETUI_APP_KEY   : "TCc38iOkNS6e0pV4UOM4J6",
+                GETUI_APP_SECRET: "0OdpDpvVYI6IExJKKH2Vr7",
+                PACKAGE_NAME    : applicationId
+        ]
+
+//        ndk {
+//            // 添加项目所需CPU类型的最小集
+//            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+//        }
+
     }
     buildTypes {
         release {
@@ -49,6 +63,9 @@ dependencies {
 
     // Permission Encapsulation
     implementation "pub.devrel:easypermissions:$rootProject.ext.easyPMVersion"
+
+    // 个推
+    implementation "com.getui:sdk:$rootProject.ext.getuiVersion"
 
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'

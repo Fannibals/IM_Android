@@ -26,14 +26,14 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Fragment for registration
  */
 public class RegisterFragment extends PresenterFragment<RegisterContract.Presenter>
         implements RegisterContract.View {
     private AccountTrigger accountTrigger;
 
     public RegisterFragment() {
-        // Required empty public constructor
+        // Required an empty public constructor
     }
     @BindView(R.id.edit_name)
     EditText mName;
@@ -52,12 +52,17 @@ public class RegisterFragment extends PresenterFragment<RegisterContract.Present
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        // get the ref of the
+        // get the ref of the AccountActivity
         accountTrigger = (AccountTrigger) context;
     }
 
+    /**
+     * 有点像 双向绑定的实现
+     * @return
+     */
     @Override
     protected RegisterContract.Presenter initPresenter() {
+
         return new RegisterPresenter(this);
     }
 
@@ -79,7 +84,7 @@ public class RegisterFragment extends PresenterFragment<RegisterContract.Present
 
     @OnClick(R.id.txt_go_login)
     void onShowLoginClick(){
-        // 进行界面切换
+        // 让Account行Activity进行界面切换
         accountTrigger.triggerView();
     }
 
@@ -87,6 +92,7 @@ public class RegisterFragment extends PresenterFragment<RegisterContract.Present
     public void showLoading() {
         super.showLoading();
 
+        // 当需要先是错误的时候触发，这个时候一定是结束了
         mLoading.start();
 
         // enables the edit txts

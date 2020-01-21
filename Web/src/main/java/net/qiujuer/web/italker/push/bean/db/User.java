@@ -28,6 +28,7 @@ public class User implements Principal {
     @GeneratedValue(generator = "uuid")
     // UUID2 -> uuid to string, accept '-'
     @GenericGenerator(name = "uuid", strategy = "uuid2")
+    // 不允许更改，不允许为空
     @Column(updatable = false, nullable = false)
     private String id;
 
@@ -74,10 +75,11 @@ public class User implements Principal {
     private LocalDateTime lastReceivedAt = LocalDateTime.now();
 
 
-    // 我关注的人的列表方法
+    // 获取所有我关注的人的列表的方法
     // 对应的数据库表字段为TB_USER_FOLLOW.originId
     @JoinColumn(name = "originId")
     // 定义为懒加载，默认加载User信息的时候，并不查询这个集合
+    // @Lazy 和 FetchType.Lazy 是一起配合使用的
     @LazyCollection(LazyCollectionOption.EXTRA)
     // 1对多，一个用户可以有很多关注人，每一次关注都是一个记录
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

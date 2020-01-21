@@ -4,6 +4,7 @@ import android.graphics.Paint;
 import android.text.TextUtils;
 
 import com.ethan.common.Common;
+import com.ethan.factory.Persistence.Account;
 import com.ethan.factory.R;
 import com.ethan.factory.data.DataSource;
 import com.ethan.factory.data.helper.AccountHelper;
@@ -26,8 +27,10 @@ public class RegisterPresenter extends BasePresenter<RegisterContract.View>
 
     @Override
     public void register(String phone, String name, String password) {
+        // 调用开始方法，在start中默认启动了Loading
         start();
 
+        // 得到View （RegisterFragment）
         RegisterContract.View view = getView();
 
 
@@ -40,7 +43,7 @@ public class RegisterPresenter extends BasePresenter<RegisterContract.View>
         }else {
 
             // create the model for request
-            RegisterModel model = new RegisterModel(phone,password,name);
+            RegisterModel model = new RegisterModel(phone,password,name, Account.getPushId());
             // 进行网路请求，并设置回送接口为自己
             AccountHelper.register(model, this);
         }
@@ -52,16 +55,10 @@ public class RegisterPresenter extends BasePresenter<RegisterContract.View>
                 && Pattern.matches(Common.constant.REGEX_MOBILE,phone);
     }
 
-    @Override
-    public void start() {
-
-    }
-
-    @Override
-    public void destroy() {
-
-    }
-
+    /**
+     * 成功时候的回调
+     * @param user
+     */
     @Override
     public void onDataLoaded(User user) {
 
@@ -82,6 +79,10 @@ public class RegisterPresenter extends BasePresenter<RegisterContract.View>
 
     }
 
+    /**
+     * 失败时候的回调
+     * @param strRes
+     */
     @Override
     public void onDataNotAvailable(final int strRes) {
         // 告知界面，fail

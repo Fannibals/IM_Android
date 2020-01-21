@@ -8,14 +8,14 @@ public class AccountRspModel {
     // 用户基本信息
     @Expose
     private UserCard user;
-    // 当前登录的账号
+    // 当前登录的账号 / 用户手机号
     @Expose
     private String account;
     // 当前登录成功后获取的Token,
     // 可以通过Token获取用户的所有信息
     @Expose
     private String token;
-    // 标示是否已经绑定到了设备PushId
+    // 标识是否已经绑定到了设备PushId
     @Expose
     private boolean isBind;
 

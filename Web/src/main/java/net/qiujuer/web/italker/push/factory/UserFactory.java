@@ -83,9 +83,12 @@ public class UserFactory {
         user.setPhone(account);
 
         // 数据库存储
-        return Hib.query(session -> {
-            session.save(user);
-            return user;
+        return Hib.query(new Hib.Query<User>() {
+            @Override
+            public User query(Session session) {
+                session.save(user);
+                return user;
+            }
         });
     }
 
@@ -109,8 +112,6 @@ public class UserFactory {
             user = login(user);
         }
         return user;
-
-
     }
 
 
@@ -159,6 +160,7 @@ public class UserFactory {
         // 第一步，查询是否有其他账户绑定了这个设备
         // 取消绑定，避免推送混乱
         // 查询的列表不能包括自己
+
         Hib.queryOnly(session -> {
             @SuppressWarnings("unchecked")
             List<User> userList = (List<User>) session
@@ -179,7 +181,7 @@ public class UserFactory {
             // 那么不需要额外绑定
             return user;
         } else {
-            // 如果当前账户之前的设备Id，和需要绑定的不同
+            // 如果当前账户之前的设备Id，和需要绑定的不同 --> 我换了个新的设备
             // 那么需要单点登录，让之前的设备退出账户，
             // 给之前的设备推送一条退出消息
             if (!Strings.isNullOrEmpty(user.getPushId())) {

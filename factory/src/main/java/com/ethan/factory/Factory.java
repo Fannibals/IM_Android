@@ -3,10 +3,14 @@ package com.ethan.factory;
 import androidx.annotation.StringRes;
 
 import com.ethan.common.app.MyApplication;
+import com.ethan.factory.Persistence.Account;
 import com.ethan.factory.data.DataSource;
 import com.ethan.factory.model.api.RspModel;
+import com.ethan.factory.utils.DBFlowExclusionStrategy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.raizlabs.android.dbflow.config.FlowConfig;
+import com.raizlabs.android.dbflow.config.FlowManager;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
@@ -28,12 +32,25 @@ public class Factory {
         executor = Executors.newFixedThreadPool(4);
         gson = new GsonBuilder()
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS")
-                //TODO：设置一个过滤器
+                //TODO：设置一个过滤器, 数据库级别的model不进行JSON转换
+                .setExclusionStrategies(new DBFlowExclusionStrategy())
                 .create();
     }
 
     public static MyApplication app(){
         return MyApplication.getInstance();
+    }
+
+    /**
+     * Factory init
+     */
+    public static void setup(){
+        // 初始化数据库
+        FlowManager.init(new FlowConfig.Builder(app())
+                .openDatabasesOnInit(true)  // 数据库初始化的时候就开始打开
+                .build());
+        // init of sharedPref
+        Account.load(app());
     }
 
     /**
@@ -127,6 +144,10 @@ public class Factory {
      * 收到账户退出的消息需要进行账户退出重新登录
      */
     private void logout() {
+
+    }
+
+    public static void dispatchPush(String msg){
 
     }
 

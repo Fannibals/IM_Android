@@ -26,9 +26,13 @@ public class UserFollow {
     // 定义一个发起人，你关注某人，这里就是你
     // 多对1 -> 你可以关注很多人，你的每一次关注都是一条记录
     // 你可以创建很多个关注的信息，所有是多对1；
+
     // 这里的多对一是：User 对应 多个UserFollow
+
     // optional 不可选，必须存储，一条关注记录一定要有一个"你"
     @ManyToOne(optional = false)
+
+    // 我们在存储的时候不需要把整个User对象存储进去，只需要存储user的id
     // 定义关联的表字段名为originId，对应的是User.id
     // 定义的是数据库中的存储字段
     @JoinColumn(name = "originId")

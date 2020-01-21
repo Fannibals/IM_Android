@@ -13,7 +13,9 @@ public class BasePresenter<T extends BaseContract.View> implements BaseContract.
      * @param view
      */
     protected void setView(T view){
+        // set the view to presenter
         mView = view;
+        // set view's presenter as well
         mView.setPresenter(this);
     }
 

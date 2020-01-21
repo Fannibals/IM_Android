@@ -5,10 +5,9 @@ import androidx.annotation.StringRes;
 public interface DataSource {
 
     /**
-     * double extension
-     * @param <T>
+     * 同时包括了成功与失败的回调接口
+     * @param <T> 任意类型
      */
-
     interface Callback<T> extends SucceedCallback<T>, FailedCallback {
 
     }
