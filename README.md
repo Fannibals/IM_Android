@@ -22,8 +22,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 This is a whole IM project includes both the front-end part (Android) and back-end side.
 
 ### Built With
@@ -71,4 +69,5 @@ Ethan Shin - snilove@hotmail.com
 
 Project Link: [https://github.com/Fannibals/IM_Android](https://github.com/Fannibals/IM_Android)
 
-
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
+[license-url]: https://github.com/Fannibals/IM_Android/blob/master/LICENSE
