@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1009443057654",
+    "firebase_url": "https://imandroid-2b199.firebaseio.com",
+    "project_id": "imandroid-2b199",
+    "storage_bucket": "imandroid-2b199.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009443057654:android:a6b961cce0629de63161d7",
+        "android_client_info": {
+          "package_name": "com.ethan.imapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009443057654-kaa3in77qjhg62spebpnhqvfn7fdh1tb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN-XtwvlxC5RVMBfhnUB4uznnUNhHOIFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009443057654-kaa3in77qjhg62spebpnhqvfn7fdh1tb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
