@@ -6,50 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="974770fc-88f8-4d7d-94ac-343ec1c120cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/AppMessageReceiverService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/AppPushService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/MessageReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/res/drawable-xxxhdpi/ic_launch_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/Persistence/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/model/api/LoginModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/model/db/AppDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/presenter/account/LoginPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/utils/DBFlowExclusionStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/api/account/AccountRspModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/api/account/AccountRspModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/UserFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/bean/db/UserFollow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/factory/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/factory/UserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/provider/AuthRequestProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/provider/AuthRequestProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/utils/TextUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/utils/TextUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/LaunchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/LaunchActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/activities/AccountActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/activities/AccountActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/fragments/account/AccountTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/fragments/account/AccountTrigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/fragments/account/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/fragments/account/LoginFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/fragments/account/RegisterFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/ethan/imapp/fragments/account/RegisterFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/activity_launch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/ethan/common/app/PresenterFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/ethan/common/app/PresenterFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/ethan/factory/data/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/ethan/factory/data/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/ethan/factory/presenter/BasePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/ethan/factory/presenter/BasePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factory/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../factory/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/data/helper/AccountHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/data/helper/AccountHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/model/db/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/model/db/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/net/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/net/Network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/net/RemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/net/RemoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/presenter/account/LoginContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/presenter/account/LoginContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/presenter/account/RegisterContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/presenter/account/RegisterContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/presenter/account/RegisterPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factory/src/main/java/com/ethan/factory/presenter/account/RegisterPresenter.java" afterDir="false" />
-    </list>
+    <list default="true" id="974770fc-88f8-4d7d-94ac-343ec1c120cd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -104,7 +61,7 @@
     <session id="-2068990715">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.12" value="1" />
@@ -173,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/provider/AuthRequestProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="143">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,11 +148,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="1632">
+              <caret line="96" column="43" lean-forward="true" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,7 +160,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.28/292e93ba8f847121f2e5e3db839baf25e95941ee/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
@@ -778,7 +735,7 @@
     <property name="SearchEverywhereHistoryKey" value="you need log in&#9;null&#9;null&#10;Hib&#9;FILE&#9;file:///Users/Ethan/Desktop/IM_Android/Web/src/main/java/net/qiujuer/web/italker/push/utils/Hib.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579585506824" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579585588549" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -980,12 +937,12 @@
       <workItem from="1579061318151" duration="11101000" />
       <workItem from="1579569289390" duration="7000" />
       <workItem from="1579579957438" duration="56000" />
-      <workItem from="1579580038259" duration="2725000" />
+      <workItem from="1579580038259" duration="2974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53208000" />
+    <option name="totallyTimeSpent" value="53457000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1000,7 +957,7 @@
     <frame x="0" y="23" width="1440" height="807" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24248926" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24248926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1013,7 +970,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.33286715" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33426574" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33426574" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32771084" />
@@ -1102,14 +1059,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java</url>
-          <line>93</line>
-          <properties class="net.qiujuer.web.italker.push.service.AccountService" method="bind">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java</url>
@@ -1505,16 +1454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/provider/AuthRequestProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.28/292e93ba8f847121f2e5e3db839baf25e95941ee/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/ContainerFilteringStage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
@@ -1522,20 +1461,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.28/292e93ba8f847121f2e5e3db839baf25e95941ee/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="544">
+          <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/provider/AuthRequestProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.28/292e93ba8f847121f2e5e3db839baf25e95941ee/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/qiujuer/web/italker/push/service/AccountService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        <state relative-caret-position="1632">
+          <caret line="96" column="43" lean-forward="true" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
