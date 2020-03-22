@@ -52,9 +52,8 @@ This is a whole IM project includes both the front-end part (Android) and back-e
 - Registeration
 - Add Friend
 - Add Group
-- IM
+- Instant Messaging
 - Voice messaging
-- 
 
 <!-- LICENSE -->
 ## License
